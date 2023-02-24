@@ -14,7 +14,6 @@ library calledLibrary {
     }
 }
 
-// lmz：
 
 contract caller {
     // 这一步非常奇怪。这里明明传入的calledContract的一个实例。但是在truffle console进行调用的时候传入的却是calledContract的地址。而且，传入实例会报错。
