@@ -16,6 +16,7 @@ library calledLibrary {
 }
 
 
+// 疑问：记得在METoken这个合约中需要使用openZeppelin的ERC20代码，里面包含了一些库和一些类。但是在部署阶段，只部署了METoken合约。
 contract caller {
     // 这一步非常奇怪。这里明明传入的calledContract的一个实例。但是在truffle console进行调用的时候传入的却是calledContract的地址。而且，传入实例会报错。
     function make_calls(calledContract _calledContract) public {
