@@ -5,6 +5,7 @@ contract calledContract {
     function calledFunction() public {
         emit callEvent(msg.sender, tx.origin, this);
     }
+}
 
 
 library calledLibrary {
